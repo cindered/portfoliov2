@@ -1,0 +1,40 @@
+@import "../../../styles/colours.scss";
+
+.contact-container {
+  display: flex;
+  margin: auto auto;
+  height: 100vh;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact-text {
+  font-family: "LeagueSpartan";
+  color: $main-text;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.contact-button {
+  font-family: "LeagueSpartan";
+  color: $main-highlight;
+  background-color: $project-box;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 8px 10px;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  border: 1px dashed#303033;
+  box-shadow: 0px 0px 15px 2px $shadow;
+}
+.contact-button:hover {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-bottom: 1px solid $main-highlight;
+  box-shadow: 0px 0px 25px 2px $shadow-highlight;
+}

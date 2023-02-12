@@ -1,0 +1,31 @@
+<section id="projects" class="projects-container">
+  <div class="projects-box--container">
+    <div *ngFor="let project of projects" class="project-box">
+      <a href="{{ project.liveLink }}" target="_blank">
+        <div class="project-box--container">
+          <div class="project-box--header">
+            {{ project.name }}
+          </div>
+
+          <div class="project-box--body">{{ project.description }}</div>
+          <div class="project-box--footer">
+            <div
+              *ngFor="let projectStackItem of project.stack"
+              class="project-box--stack"
+            >
+              {{ projectStackItem }}
+            </div>
+            <div class="project-box--link">
+              <a href="{{ project.repoLink }}" target="_blank">
+                <fa-icon
+                  class="project-box--icon"
+                  [icon]="['fab', 'github']"
+                ></fa-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

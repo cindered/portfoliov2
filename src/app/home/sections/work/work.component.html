@@ -1,0 +1,33 @@
+<section id="work" class="work-container">
+  <div *ngFor="let job of jobs; let i = index" class="work-box">
+    <div class="work-box--header">
+      <div class="work-box--role">{{ job.role }}</div>
+      <div class="work-box--company">{{ job.company }}</div>
+    </div>
+    <div class="work-box--body">
+      <div class="work-divider--container">
+        <div class="work-divider"></div>
+        <div class="work-box--product">{{ job.product }}</div>
+      </div>
+      <div class="work-box--body--content">
+        <div class="work-box--description--container">
+          <div class="work-box--description">{{ job.description }}</div>
+          <div class="work-box--description">{{ job.responsibilities }}</div>
+        </div>
+        <div class="work-box--side--container">
+          <div class="work-box--date--container">
+            <div class="work-box--date">
+              {{ job.dateFrom }}
+            </div>
+            <div class="dot"></div>
+            <div class="work-box--date">{{ jobDateTo(i) }}</div>
+          </div>
+          <div class="work-box--stack" *ngFor="let jobStackItem of job.stack">
+            {{ jobStackItem }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="'work-box--footer"></div>
+  </div>
+</section>

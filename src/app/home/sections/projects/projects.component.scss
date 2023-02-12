@@ -1,0 +1,120 @@
+@import "../../../styles/colours.scss";
+
+.projects-container {
+  display: flex;
+  margin: auto auto;
+  height: 100vh;
+}
+.projects-box--container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 375px;
+  margin-right: 375px;
+}
+.project-box {
+  background-color: $project-box;
+  background: linear-gradient(
+    360deg,
+    $project-box 100%,
+    $project-box-highlight 100%
+  );
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+.project-box:hover {
+  background-color: #262630;
+  background: linear-gradient(
+    360deg,
+    $project-box 0%,
+    $project-box-highlight 100%
+  );
+}
+.project-box--container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  padding: 15px 25px;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  border: 1px dashed#303033;
+  box-shadow: 0px 0px 15px 2px $shadow;
+}
+.project-box--container:hover {
+  cursor: pointer;
+  width: 302px;
+  height: 302px;
+  border-bottom: 1px solid $main-highlight;
+  box-shadow: 0px 0px 25px 2px $shadow-highlight;
+  .project-box--header {
+    border-bottom: 1px solid $main-highlight;
+  }
+  .project-box--stack {
+    color: $main-highlight;
+  }
+}
+
+.project-box--header {
+  display: flex;
+  align-items: center;
+  font-family: "RobotoMono";
+  justify-content: flex-start;
+  color: $main-highlight;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed $main-title;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+.project-box--body {
+  display: flex;
+  align-items: center;
+  font-family: "LeagueSpartan";
+  color: $main-text;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 100%;
+}
+
+.project-box--footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.project-box--stack {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "RobotoMono";
+  color: $stack-text;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 0px;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+.project-box--link {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0px;
+}
+.project-box--icon {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $stack-text;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+.project-box--icon:hover {
+  color: $main-highlight;
+}
+
+a {
+  text-decoration: none;
+}

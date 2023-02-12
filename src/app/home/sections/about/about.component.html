@@ -1,0 +1,18 @@
+<section id="about" class="about-container">
+  <div class="about-box">
+    <div class="about-name">
+      {{ aboutContent.name }}
+    </div>
+    <div class="about-title">{{ aboutContent.title }}</div>
+    <div class="about-text">{{ aboutContent.about }}</div>
+    <div class="about-divider--container">
+      <div class="about-divider--text">Current Stack</div>
+      <div class="about-divider"></div>
+    </div>
+    <div class="about-stack--container">
+      <div class="about-stack" *ngFor="let stackItem of aboutContent.stack">
+        {{ stackItem }}
+      </div>
+    </div>
+  </div>
+</section>
