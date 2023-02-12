@@ -1,0 +1,11 @@
+<div class="header-container">
+  <ul class="navigation-list">
+    <li
+      class="navigation-list-item"
+      *ngFor="let link of links"
+      (click)="scrollTo($event)"
+    >
+      {{ link }}
+    </li>
+  </ul>
+</div>

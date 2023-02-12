@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/styles/colours.scss";
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./assets/fonts/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("./assets/fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoMono-Light";
+  src: url("./assets/fonts/RobotoMono-Light.ttf");
+}
+@font-face {
+  font-family: "LeagueSpartan-Light";
+  src: url("./assets/fonts/LeagueSpartan-Light.ttf");
+}
+
+* {
+  margin: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  margin-right: 5px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $scrollbar-highlight;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $main-background-dark;
+}

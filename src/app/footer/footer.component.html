@@ -1,0 +1,12 @@
+<div class="footer-container">
+  <div class="footer-box">
+    <div class="footer-box--link--container">
+      <div *ngFor="let link of links" class="footer-box--link">
+        <a href="{{ link.link }}" target="_blank">
+          <fa-icon [icon]="['fab', link.iconName]"></fa-icon>
+        </a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+  </div>
+</div>
