@@ -119,6 +119,9 @@ a {
 }
 
 @media (max-width: 1300px) {
+  .projects-container {
+    height: 100%;
+  }
   .projects-box--container {
     flex-wrap: wrap;
     justify-content: center;
