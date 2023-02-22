@@ -11,6 +11,7 @@
 .work-box {
   display: flex;
   flex-direction: column;
+  width: 750px;
   margin: auto 575px;
 }
 .work-box--header {
@@ -106,4 +107,24 @@
   height: 4px;
   margin: auto 8px;
   background-color: $main-highlight;
+}
+
+@media (max-width: 1300px) {
+  .work-box {
+    width: 600px;
+  }
+  .work-box--header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 800px) {
+  .work-box {
+    width: 500px;
+  }
+  .work-box--role {
+    border: none;
+    margin: 0px;
+    padding-right: 0px;
+  }
 }

@@ -2,13 +2,14 @@
 
 .about-container {
   display: flex;
-  margin: auto auto;
+  justify-content: center;
   height: 100vh;
 }
 .about-box {
   display: flex;
   flex-direction: column;
-  margin: auto 600px 550px 600px;
+  width: 700px;
+  margin: auto 0px 550px 0px;
 }
 .about-name {
   color: $main-title;
@@ -67,4 +68,23 @@
 .about-stack {
   font-size: 13px;
   margin-right: 10px;
+}
+
+@media (max-width: 1300px) {
+  .about-box {
+    width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-box {
+    width: 500px;
+  }
+  .about-name
+    .about-title
+    .about-text
+    .about-divider--container
+    .about-stack--container {
+    margin-left: 0px;
+  }
 }

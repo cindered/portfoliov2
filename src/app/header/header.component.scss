@@ -1,8 +1,8 @@
 @import "../styles/colours.scss";
 
 .header-container {
-  overflow: initial;
   position: fixed;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

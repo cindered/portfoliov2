@@ -7,11 +7,9 @@
 }
 .projects-box--container {
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-around;
-  margin-left: 375px;
-  margin-right: 375px;
+  justify-content: space-between;
+  margin: 0px auto;
 }
 .project-box {
   background-color: $project-box;
@@ -20,6 +18,7 @@
     $project-box 100%,
     $project-box-highlight 100%
   );
+  margin: 0px 15px;
   transition-duration: 0.1s;
   transition-timing-function: linear;
 }
@@ -117,4 +116,14 @@
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+  .projects-box--container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-box {
+    margin: 15px 15px;
+  }
 }

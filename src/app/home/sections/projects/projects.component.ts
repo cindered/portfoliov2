@@ -20,7 +20,7 @@ export class ProjectsComponent {
       name: 'Chittr',
       description:
         "A 'Twitter-Like' phone application created using React-Native which allows users to interact with others. Includes user profiles, logins, posts, geolocation, following and unfollowing features.",
-      stack: ['React-Native', 'Node', 'HTML', 'CSS'],
+      stack: ['React-Native', 'HTML', 'CSS', 'Node'],
       repoLink: 'https://github.com/cindered/chittr',
       liveLink: 'https://github.com/cindered/chittr',
     },
@@ -28,7 +28,7 @@ export class ProjectsComponent {
       name: 'Neural Network Package',
       description:
         "An online interactive example that makes use of google's TensorFlow.js in an attempt to teach people about Deep Learning.",
-      stack: ['JavaScript', 'Tensorflow', 'HTML', 'CSS'],
+      stack: ['JavaScript', 'HTML', 'CSS', 'Tensorflow'],
       repoLink: 'https://github.com/cindered/nnpackage',
       liveLink: 'https://cindered.github.io/nnpackage/',
     },

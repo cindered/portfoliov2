@@ -1,11 +1,12 @@
 @import "../styles/colours.scss";
 
 .footer-container {
+  display: flex;
   position: fixed;
+  overflow: hidden;
   left: 25px;
   bottom: 25px;
   width: 250px;
-  display: flex;
   color: $main-text;
 }
 .footer-box {
