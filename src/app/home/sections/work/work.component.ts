@@ -15,9 +15,9 @@ export class WorkComponent {
       description:
         "Creating, updating and fixing features for a Vendor Management System called 'E-Tips' that acts as a middleman service for recruitment agencies, clients and their candidates.",
       responsibilities:
-        'Responsibilites included: ' +
+        'Responsibilities included: ' +
         'Designing and developing software applications using Go, Angular, AWS and Docker, ' +
-        'creating reusable components and implemening efficient algorithms, writing automated tests to create robust features, ' +
+        'creating reusable components and implementing efficient algorithms, writing automated tests to create robust features, ' +
         'deploying services using Docker and AWS, managing source code and CI/CD pipelines via BitBucket, and finally collaborating and contributing to the team to improve the development process.',
       dateFrom: '02/2021',
       dateTo: '',
