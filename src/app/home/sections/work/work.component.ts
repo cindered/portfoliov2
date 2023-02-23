@@ -18,7 +18,7 @@ export class WorkComponent {
         'Responsibilites included: ' +
         'Designing and developing software applications using Go, Angular, AWS and Docker, ' +
         'creating reusable components and implemening efficient algorithms, writing automated tests to create robust features, ' +
-        'deploying services using Docker and AWS, managing source cod and CI/CD pipelines via BitBucket, and finally collaborating and contributing to the team to improve the development process.',
+        'deploying services using Docker and AWS, managing source code and CI/CD pipelines via BitBucket, and finally collaborating and contributing to the team to improve the development process.',
       dateFrom: '02/2021',
       dateTo: '',
       stack: ['Go', 'TypeScript', 'Angular', 'MySQL', 'AWS', 'Docker'],
