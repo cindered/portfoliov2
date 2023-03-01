@@ -11,8 +11,7 @@ export interface Job {
   company: string;
   role: string;
   product: string;
-  description: string;
-  responsibilities: string;
+  responsibilities: string[];
   dateFrom: string;
   dateTo: string;
   stack: string[];

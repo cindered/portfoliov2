@@ -11,8 +11,12 @@
       </div>
       <div class="work-box--body--content">
         <div class="work-box--description--container">
-          <div class="work-box--description">{{ job.description }}</div>
-          <div class="work-box--description">{{ job.responsibilities }}</div>
+          <div *ngFor="let responsibility of job.responsibilities">
+            <div class="work-box--responsibilities--container">
+              <div class="triangle-right"></div>
+              <div class="work-box--responsibilities">{{ responsibility }}</div>
+            </div>
+          </div>
         </div>
         <div class="work-box--side--container">
           <div class="work-box--date--container">
@@ -22,8 +26,10 @@
             <div class="dot"></div>
             <div class="work-box--date">{{ jobDateTo(i) }}</div>
           </div>
-          <div class="work-box--stack" *ngFor="let jobStackItem of job.stack">
-            {{ jobStackItem }}
+          <div class="work-box--stack--container">
+            <div class="work-box--stack" *ngFor="let jobStackItem of job.stack">
+              {{ jobStackItem }}
+            </div>
           </div>
         </div>
       </div>

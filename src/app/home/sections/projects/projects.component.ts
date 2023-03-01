@@ -11,7 +11,7 @@ export class ProjectsComponent {
     {
       name: 'Weather App',
       description:
-        'A simple, reactive single page web application created using React.js and WeatherStack API to display the current weather anywhere in the world.',
+        'A responsive web application which uses React.js and an open weather API to provide up to date weather data based on a user’s search parameters.',
       stack: ['React', 'React Spring', 'WeatherStack API'],
       repoLink: 'https://github.com/cindered/weather-app',
       liveLink: 'https://github.com/cindered/weather-app',
@@ -27,7 +27,7 @@ export class ProjectsComponent {
     {
       name: 'Neural Network Package',
       description:
-        "An online interactive example that makes use of google's TensorFlow.js in an attempt to teach people about Deep Learning with visual examples.",
+        'Formulation of an interactive learning platform, created using JavaScript and TensorFlow.js to entice individuals to learn about Deep Learning and Machine Learning.',
       stack: ['JavaScript', 'HTML', 'CSS', 'Tensorflow'],
       repoLink: 'https://github.com/cindered/nnpackage',
       liveLink: 'https://cindered.github.io/nnpackage/',

@@ -12,13 +12,14 @@ export class WorkComponent {
       company: 'Geometric Results Inc / Magnit Global',
       role: 'Software Developer',
       product: 'E-Tips',
-      description:
-        "Creating, updating and fixing features for a Vendor Management System called 'E-Tips' that acts as a middleman service for recruitment agencies, clients and their candidates.",
-      responsibilities:
-        'Responsibilities included: ' +
-        'Designing and developing software applications using Go, Angular, AWS and Docker, ' +
-        'creating reusable components and implementing efficient algorithms, writing automated tests to create robust features, ' +
-        'deploying services using Docker and AWS, managing source code and CI/CD pipelines via BitBucket, and finally collaborating and contributing to the team to improve the development process.',
+      responsibilities: [
+        'Upgrading the company’s front-end and back-end features for an efficient microservices product written in Go. ',
+        'Refining and fixing legacy features for their Vendor Management System called “E-Tips” that deals with features such as timesheets, finance and reporting for recruitment agencies and clients. This platform handles the main revenue for the company in millions as there are a large number of clients that use the platform.',
+        'Optimising and implementing a REST API with Go that handles many requests daily, also connected to a front-end platform written in TypeScript.',
+        'Performing integration and deployment of software changes via BitBucket CI/CD pipelines and Jenkins. ',
+        'Stress testing and efficiency monitoring via Elasticsearch and Jaeger to make the system stand out from their competition.',
+        'Formulating and implementing SaaS features for client specific requirements by using RBAC functionality within the API.',
+      ],
       dateFrom: '02/2021',
       dateTo: '',
       stack: ['Go', 'TypeScript', 'Angular', 'MySQL', 'AWS', 'Docker'],

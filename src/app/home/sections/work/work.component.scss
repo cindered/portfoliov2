@@ -66,12 +66,18 @@
 .work-box--description--container {
   margin: 2.5px 15px 2.5px 15px;
 }
-.work-box--description {
+.work-box--responsibilities--container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.work-box--responsibilities {
   font-family: "LeagueSpartan-Light";
   color: $main-text;
   font-size: 15px;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .work-box--side--container {
   margin-left: 10px;
@@ -88,13 +94,14 @@
   font-size: 12px;
   letter-spacing: 1px;
 }
-.work-box--stack {
+.work-box--stack--container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+.work-box--stack {
   font-family: "RobotoMono";
   color: $stack-text;
-  //$main-text ?
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -107,6 +114,14 @@
   height: 4px;
   margin: auto 8px;
   background-color: $main-highlight;
+}
+.triangle-right {
+  margin-top: 5px;
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-left: 8px solid $main-highlight;
+  border-bottom: 3px solid transparent;
 }
 
 @media (max-width: 1300px) {
